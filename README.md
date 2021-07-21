@@ -20,7 +20,8 @@ MvpNewsApp : mvp design pattern project example
   
 
 ## Authors
-farid solgi : # solgifarid@gmail.com
+farid solgi 
+## solgifarid@gmail.com
 
 ## License
 
