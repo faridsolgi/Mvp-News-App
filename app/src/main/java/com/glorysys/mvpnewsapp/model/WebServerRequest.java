@@ -47,6 +47,9 @@ public class WebServerRequest  {
                                     objNews.setNewsTitle(jsonObject.getString("title"));
                                     objNews.setNewsDescription(jsonObject.getString("description"));
                                     objNews.setNewsAuthor(jsonObject.getString("author"));
+                                    objNews.setNewsImage(jsonObject.getString("urlToImage"));
+                                    objNews.setNewsTime(jsonObject.getString("publishedAt"));
+
                                     objNewsList.add(objNews);
                                     Log.i(TAG, "onResponse: "+objNewsList.get(i).getNewsSource());
                                 }

@@ -3,6 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    tools:background="#f1f1f1"
     xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -12,18 +14,83 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:id="@+id/cl_newsModel_clMain"
-        android:layout_margin="8dp"
         android:background="@drawable/shape_background_news"
-        android:padding="8dp">
-        <TextView
+        >
+        <com.google.android.material.imageview.ShapeableImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="250dp"
             app:layout_constraintTop_toTopOf="parent"
+            android:scaleType="centerCrop"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            tools:text="as.afka;lfka;flka;l kfa;klf a;lfk a;lf a;fk lafkl a;lkf "
-            android:id="@+id/textview_newsModel_newsArticle"
-            />
+            android:id="@+id/imageview_newsModel_newsImg"
+            app:shapeAppearanceOverlay="@style/roundedImageView"
+/>
+
+        <TextView
+            android:id="@+id/textview_newsModel_newsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:maxLength="60"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageview_newsModel_newsImg"
+            tools:text="news titldasaddadadadadaddasdadadadaddadadq" />
+
+        <TextView
+            android:id="@+id/textview_newsModel_newsDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:maxLength="180"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_newsModel_newsTitle"
+            tools:text="dlasklaksd;lakdalk aksd alk;laks;lkd aksda;sdla;kd;ad k;d;gks;ldg;sldgk g;lks; kgs;gks;gks;gksg;ldk ;g ks;gks;gk sk g;skg s;kg;s gdkadk ;a k;a ks;sak; kda;sd askda;ks a;kd;ak a;kd a;kd a;kda;dk a;kda;dka ;kda;dk a;" />
+
+        <TextView
+            android:id="@+id/textview_newsModel_newsDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@id/textview_newsModel_newsAuthor"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_newsModel_newsDescription"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
+            tools:text="date date date date" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/textview_newsModel_newsDate"
+            android:id="@+id/textview_newsModel_newsAuthor"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintBottom_toBottomOf="@id/textview_newsModel_newsDate"
+            app:layout_constraintTop_toTopOf="@id/textview_newsModel_newsDate"
+            app:layout_constraintEnd_toStartOf="@id/textview_newsModel_newsSource"
+            tools:text="fafaf fa sfafs"
+       />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/textview_newsModel_newsDate"
+            app:layout_constraintStart_toEndOf="@id/textview_newsModel_newsAuthor"
+            android:id="@+id/textview_newsModel_newsSource"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/textview_newsModel_newsDate"
+            tools:text="bbc news"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
