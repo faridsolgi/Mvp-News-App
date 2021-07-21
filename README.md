@@ -1,8 +1,8 @@
 # MvpNewsApp
 get news from server and show it on Recyclerview  with MVP pattern Design
 # Project Title
+MvpNewsApp : mvp design pattern project example
 
-Simple overview of use/purpose.
 
 ## Getting Started
 
@@ -19,9 +19,8 @@ Simple overview of use/purpose.
   
 
 ## Authors
-
-Contributors names and contact info
+farid solgi : #solgifarid@gmail.com
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the farid solgi License - see the LICENSE.md file for details
