@@ -10,6 +10,7 @@ MvpNewsApp : mvp design pattern project example
 
 * volley
 * piccaso
+
 ##Snap Shots
 <p align="center">
 <img src="https://github.com/faridsolgi/MvpNewsApp/blob/master/img/Screenshot_20210722_020313.png" width="360" height="740" />
