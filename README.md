@@ -12,6 +12,7 @@ MvpNewsApp : mvp design pattern project example
 * piccaso
 
 ## Snap Shots
+
 <p align="center">
 <img src="https://github.com/faridsolgi/MvpNewsApp/blob/master/img/Screenshot_20210722_020313.png" width="360" height="740" />
  &nbsp; &nbsp; &nbsp; &nbsp;
@@ -25,4 +26,4 @@ farid solgi
 
 ## License
 
-This project is licensed under the farid solgi License - see the LICENSE.md file for details
+This project is licensed under the open source License 
