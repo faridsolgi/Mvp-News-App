@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         FragmentManager fragmentManager=this.getSupportFragmentManager();
         FragmentTransaction transaction=fragmentManager.beginTransaction();
         ShowNewsFragment showNewsFragment=new ShowNewsFragment();
-        transaction.add(R.id.cl_mainActivity_clFragment,showNewsFragment).addToBackStack("NewsFragment").commit();
+        transaction.add(R.id.cl_mainActivity_clFragment,showNewsFragment).commit();
 
 
 
